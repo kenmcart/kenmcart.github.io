@@ -1,0 +1,21 @@
+*{
+    font-family: 'Georgia', serif;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    padding-right: 50px;
+}
+
+body {
+    background: #141415;
+    color: #fff;
+}
+
+#header
+{
+    text-align: center;
+}
+
