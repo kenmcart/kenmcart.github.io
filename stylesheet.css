@@ -1,10 +1,33 @@
+@font-face {
+    font-family: 'Custom';
+    src: url('custom.ttf');
+}
+
 *{
-    font-family: 'Georgia', serif;
+    font-family: 'Custom';
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-    background: #141415;
+    background: #714f54;
     color: #fff;
+    margin: 0px;
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+p 
+{
+    font-size: 20px;
+}
+
+a 
+{
+    font-size: 20px;
 }
 
 #portrait
@@ -17,13 +40,21 @@ body {
 
 #header
 {
+    background-color: rgb(68, 45, 45);
     text-align: center;
+    display: block;
+    line-height:35px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin: 0px;
+    top: 0;
 }
 
 #description
 {
     display: block;
-    position: relative;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -33,35 +64,38 @@ body {
 
 #footer
 {
-    background-color: black;
+    background-color: rgb(68, 45, 45);
     position: absolute;
     display: block;
     text-align: center;
     width: 100%;
+    padding: 15px;
     bottom: 0;
 }
 
+/* Navbar styling */
 .navbar ul
 {
     list-style-type: none;
-    background-color: grey;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px;
+    background-color: rgb(68, 45, 45);
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 50px;
 }
 
 .navbar a 
 {
     color: white;
-    text-decoration: none;
     display: block;
     text-align: center;
+    text-decoration: none;
     padding: 15px;
 }
 
 .navbar a:hover
 {
-    background-color:darkslategray
+    background-color:rgb(64, 39, 35);
 }
 
 .navbar li
@@ -69,4 +103,41 @@ body {
     float: left;
 }
 
+/* Slider and carousel styling */
+.slider-wrapper 
+{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 
+.slides-container 
+{
+    height: 325px;
+    width: 150px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+  
+.slide 
+{
+    width: 150px;
+    height: 325px;
+    flex: 1 0 100%;
+}
+
+.slides-container 
+{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.slides-container::-webkit-scrollbar 
+{ 
+    width: 0;
+    height: 0;
+}
