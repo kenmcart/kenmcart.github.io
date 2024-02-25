@@ -56,8 +56,7 @@ a
 {
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    float: right;
     margin-top: 35px;
     width: 30%;
 }
