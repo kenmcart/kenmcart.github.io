@@ -36,6 +36,7 @@ a
     position: relative;
     float: right;
     padding: 35px;
+    top: 135px;
 }
 
 #header
@@ -43,6 +44,7 @@ a
     background-color: rgb(68, 45, 45);
     text-align: center;
     display: block;
+    position: absolute;
     line-height:35px;
     padding-top: 15px;
     padding-right: 15px;
@@ -55,9 +57,11 @@ a
 #description
 {
     display: block;
+    position: relative;
     text-align: center;
     float: right;
     margin-top: 35px;
+    top: 200px;
     width: 30%;
 }
 
@@ -73,14 +77,13 @@ a
 }
 
 /* Navbar styling */
+
 .navbar ul
 {
     list-style-type: none;
     background-color: rgb(68, 45, 45);
-    padding-left: 15px;
-    padding-right: 15px;
     width: 100%;
-    height: 50px;
+    height: 35px;
 }
 
 .navbar a 
@@ -94,12 +97,53 @@ a
 
 .navbar a:hover
 {
-    background-color:rgb(64, 39, 35);
+    color: rgb(176, 174, 174);
 }
 
 .navbar li
 {
     float: left;
+}
+
+.wave {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 77px;
+}
+
+.wave .shape-fill {
+    fill: rgb(68, 45, 45);
+}
+
+.wave-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 77px;
+}
+
+.wave-2 .shape-fill {
+    fill: rgb(68, 45, 45);
 }
 
 /* Slider and carousel styling */
