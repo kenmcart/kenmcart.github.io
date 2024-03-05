@@ -118,7 +118,7 @@ a
     position: relative;
     display: block;
     width: calc(138% + 1.3px);
-    height: 77px;
+    height: 60px;
 }
 
 .wave .shape-fill {
@@ -139,7 +139,7 @@ a
     position: relative;
     display: block;
     width: calc(138% + 1.3px);
-    height: 77px;
+    height: 60px;
 }
 
 .wave-2 .shape-fill {
