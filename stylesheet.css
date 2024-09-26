@@ -5,6 +5,7 @@
 
 *{
     font-family: 'Custom';
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -44,9 +45,9 @@ a
     background-color: rgb(68, 45, 45);
     text-align: center;
     display: block;
-    position: absolute;
-    line-height:35px;
+    line-height:30px;
     padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
@@ -59,13 +60,14 @@ a
     display: block;
     position: relative;
     text-align: center;
-    float: right;
+
     margin-top: 35px;
-    top: 200px;
-    width: 30%;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: 100%;
 }
 
-#footer
+.footer
 {
     background-color: rgb(68, 45, 45);
     position: absolute;
@@ -75,6 +77,14 @@ a
     padding: 15px;
     bottom: 0;
 }
+
+.footer2 {
+    padding: 20px;
+    text-align: center;
+    background: rgb(68, 45, 45);
+    margin-top: 20px;
+    bottom: 0;
+  }
 
 /* Navbar styling */
 
@@ -105,7 +115,37 @@ a
     float: left;
 }
 
-.wave {
+.leftcolumn {
+  float: left;
+  width: 80%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 20%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.wave {
     position: absolute;
     top: 150px;
     left: 0;
@@ -144,7 +184,7 @@ a
 
 .wave-2 .shape-fill {
     fill: rgb(68, 45, 45);
-}
+}*/
 
 /* Slider and carousel styling */
 .slider-wrapper 
@@ -183,4 +223,11 @@ a
 { 
     width: 0;
     height: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
 }
